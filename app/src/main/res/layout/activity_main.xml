@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#C9C3C6"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/etNama"
+        android:background="#C9C3C6"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/etSubjek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNama"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Subjek"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:background="#C9C3C6"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etPesan"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:ems="10"
+        android:hint="Pesan"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etSubjek"
+        android:padding="16dp"
+        android:background="#C9C3C6"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/btKirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:text="Kirim"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
